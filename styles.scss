@@ -166,8 +166,8 @@ footer a {
 
     .block-1 {
         text-align: left;
-        margin-right: 3rem;
-        padding: 2.5rem 3rem;
+        margin-right: 1rem;
+        padding: 2.3rem 4rem;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
@@ -177,6 +177,7 @@ footer a {
             color: hsl(0, 0%, 100%);
             font-size: 1.8rem;
             padding: 1.26rem 0;
+            line-height: 1.26;
 
 
             .insights {
@@ -185,8 +186,8 @@ footer a {
         }
 
         p {
-            padding: .2rem 0;
-            font-size: .8rem;
+            padding: .09rem 0;
+            font-size: .78rem;
             color: hsla(0, 0%, 100%, 0.6);
             line-height: 1.6;
             font-weight: 400;
@@ -200,7 +201,7 @@ footer a {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        padding: 2.5rem 2.3rem;
+        padding: 2.5rem 2.9rem;
 
         .box {
             padding-right: 2.8rem;
