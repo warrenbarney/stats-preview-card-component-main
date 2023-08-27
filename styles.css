@@ -20,6 +20,7 @@ body {
 }
 
 main {
+  display: grid;
   width: 21.8rem;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.75);
@@ -37,7 +38,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -45,7 +46,7 @@ header {
 .block-1 h1 {
   color: hsl(0, 0%, 100%);
   font-size: 1.8rem;
-  padding: 1rem 1.5rem;
+  padding: 1.1rem 1.5rem;
 }
 .block-1 h1 .insights {
   color: hsl(277, 64%, 61%);
@@ -58,8 +59,8 @@ header {
 }
 
 .block-2 {
-  padding-top: 1.8rem;
-  padding-bottom: 1.2rem;
+  padding-top: 1.9rem;
+  padding-bottom: 1.3rem;
 }
 .block-2 .box {
   padding: 0.8rem;
@@ -85,4 +86,72 @@ footer {
 
 footer a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 765px) {
+  html {
+    font-size: 19.4px;
+  }
+  main {
+    width: 56rem;
+    height: 23rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  header {
+    background-image: url("images/image-header-desktop.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 1.3rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .block-1 {
+    text-align: left;
+    margin-right: 3rem;
+    padding: 2.5rem 3rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .block-1 h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    padding: 1.26rem 0;
+  }
+  .block-1 h1 .insights {
+    color: hsl(277, 64%, 61%);
+  }
+  .block-1 p {
+    padding: 0.2rem 0;
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 0;
+  }
+  .block-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 2.5rem 2.3rem;
+  }
+  .block-2 .box {
+    padding-right: 2.8rem;
+  }
+  .block-2 .box .num {
+    text-align: left;
+    font-size: 1.26rem;
+  }
+  .block-2 .box .title {
+    text-align: left;
+    font-size: 0.65rem;
+    letter-spacing: 0;
+    padding: 0;
+    padding-top: 0.4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
